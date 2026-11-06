@@ -5,309 +5,400 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Rahul Dixit | Senior Software Engineer, Fullstack</title>
+    <meta name="description"
+        content="Rahul Dixit is a Senior Software Engineer (Fullstack) at Autodesk, Bengaluru, focused on technical leadership, architecture, scalable AWS infrastructure and Generative / Agentic AI.">
+    <meta name="theme-color" content="#0b1120">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Rahul Dixit | Senior Software Engineer, Fullstack">
+    <meta property="og:description"
+        content="Technical leadership, architecture, scalable AWS infrastructure and Generative / Agentic AI.">
+    <meta property="og:url" content="https://rahuld27.github.io/">
+    <meta property="og:image" content="https://rahuld27.github.io/assets/img/profile.jpg">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
-    <link rel="shortcut icon" href="assets/img/Rahul.png">
-
-    <title>Rahul Dixit</title>
+    <script>
+        (function () {
+            var root = document.documentElement;
+            var theme = null;
+            try { theme = localStorage.getItem('theme'); } catch (e) { }
+            if (theme !== 'light' && theme !== 'dark') {
+                theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+            root.dataset.theme = theme;
+            root.classList.add('js');
+        })();
+    </script>
 </head>
 
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
     <!--===== HEADER =====-->
-    <header class="l-header" style="background-color: #1c3747;">
-        <nav class="nav bd-grid">
-            <div>
-                <a href="" class="nav__logo" style="color: white;">Rahul Dixit</a>
-            </div>
+    <header class="header" id="header">
+        <nav class="nav container" aria-label="Main">
+            <a href="#home" class="nav__logo" aria-label="Rahul Dixit, back to top">
+                <span class="nav__logo-mark">RD</span>
+                <span class="nav__logo-text">Rahul Dixit</span>
+            </a>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active" style="color: white;">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link" style="color: white;">About</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link" style="color: white;">Work</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link" style="color: white;">Skills</a></li>
-                    <li class="nav__item"><a href="#project" class="nav__link" style="color: white;">Projects</a></li>
-                </ul>
-            </div>
+            <ul class="nav__menu" id="nav-menu">
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#experience" class="nav__link">Experience</a></li>
+                <li><a href="#skills" class="nav__link">Skills</a></li>
+                <li><a href="#projects" class="nav__link">Projects</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
 
-            <div class="nav__toggle" id="nav-toggle" style="color: white;">
-                <i class='bx bx-menu'></i>
+            <div class="nav__actions">
+                <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+                    <i class='bx bx-moon icon-moon' aria-hidden="true"></i>
+                    <i class='bx bx-sun icon-sun' aria-hidden="true"></i>
+                </button>
+                <button class="icon-btn nav__toggle" id="nav-toggle" type="button" aria-label="Open menu"
+                    aria-controls="nav-menu" aria-expanded="false">
+                    <i class='bx bx-menu' aria-hidden="true"></i>
+                </button>
             </div>
         </nav>
     </header>
 
-    <!--===== HOME =====-->
-    <main class="l-main">
-        <section class="home bd-grid" id="home">
-            <div class="home__data">
-                <h1 class="home__title" style="margin-top: 11%;">Hi, I'm <span class="home__title-color"
-                        style="display: inline-block;">Rahul Dixit</span><br>Lead SDE at</h1><img
-                    src="assets/img/autodesk.png" alt=""
-                    style="height: 15%; width: 45%; display: inline-block; margin-left: -1.5%;">
-                <br /><br />
+    <main id="main">
+        <!--===== HOME =====-->
+        <section class="hero container" id="home">
+            <div class="hero__content reveal">
+                <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Senior Software Engineer, Fullstack</p>
+                <h1 class="hero__title">Hi, I'm <span class="gradient-text">Rahul Dixit</span></h1>
+                <p class="hero__lead">
+                    I lead architecture and build scalable cloud infrastructure and applications, with a current
+                    focus on <strong>Generative AI</strong> and <strong>Agentic AI</strong>.
+                </p>
 
-                <a href="https://raw.githubusercontent.com/Rahuld27/rahuld27.github.io/576e5705202ccf6b7cc093ca6ffd4049ed30ca59/CV_Rahul_Dixit.pdf"
-                    target="blank" class="button">Resume</a>
+                <div class="hero__company">
+                    <span>Currently at</span>
+                    <a href="https://www.linkedin.com/company/autodesk/about/" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/img/autodesk.png" alt="Autodesk" class="logo-invert" width="652" height="111">
+                    </a>
+                </div>
+
+                <div class="hero__actions">
+                    <a href="CV_Rahul_Dixit.pdf" target="_blank" rel="noopener" class="btn btn--primary">
+                        <i class='bx bx-download' aria-hidden="true"></i> Download CV
+                    </a>
+                    <a href="#contact" class="btn btn--ghost">Get in touch</a>
+                </div>
+
+                <div class="hero__social">
+                    <a href="https://www.linkedin.com/in/rahuldixitblr/" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn"><i class='bx bxl-linkedin' aria-hidden="true"></i></a>
+                    <a href="https://github.com/Rahuld27" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub"><i class='bx bxl-github' aria-hidden="true"></i></a>
+                    <a href="mailto:dixit.rahul94@gmail.com" aria-label="Email"><i class='bx bx-envelope'
+                            aria-hidden="true"></i></a>
+                </div>
             </div>
 
-            <div class="home__social" style="margin-top: 2%;">
-                <a href="https://www.linkedin.com/in/rahuldixitblr/" target="blank" class="home__social-icon"><i
-                        class='bx bxl-linkedin'></i> Linkedin</a>
-                <a href="https://github.com/Rahuld27" target="blank" class="home__social-icon"><i
-                        class='bx bxl-github'></i> Github</a>
+            <div class="hero__visual reveal">
+                <div class="hero__photo">
+                    <img src="assets/img/profile.jpg" alt="Portrait of Rahul Dixit" width="720" height="720">
+                </div>
             </div>
 
+            <ul class="stats reveal" aria-label="Highlights">
+                <li class="stat"><span class="stat__value">8+</span><span class="stat__label">Years of experience</span></li>
+                <li class="stat"><span class="stat__value">5</span><span class="stat__label">Companies, from startups to Amazon &amp; Autodesk</span></li>
+                <li class="stat"><span class="stat__value">AI</span><span class="stat__label">Generative &amp; Agentic AI on AWS</span></li>
+            </ul>
         </section>
-
-        <br /><br /><br /><br /><br /><br /><br /><br />
 
         <!--===== ABOUT =====-->
-        <section class="about section " id="about">
-            <h2 class="section-title">About</h2>
+        <section class="section container" id="about">
+            <header class="section__header reveal">
+                <p class="section__kicker">About</p>
+                <h2 class="section__title">A bit about me</h2>
+            </header>
 
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <img src="assets/img/about.jpeg" alt="">
+            <div class="about">
+                <div class="about__text reveal">
+                    <p>
+                        I'm a fullstack engineer based in Bengaluru with 8+ years of experience. At Autodesk I drive
+                        technical leadership, architecture and design for enterprise applications: designing scalable
+                        AWS infrastructure, building Generative AI and Agentic AI (SAM AI) solutions, and taking
+                        projects from inception to delivery.
+                    </p>
+                    <p>
+                        Before that I built product backends and 3D experiences at ExarFit, payment gateway systems at
+                        Datman, data pipelines and machine learning models at Maveric Systems, and catalog automation
+                        at Amazon India.
+                    </p>
                 </div>
 
-                <div>
-                    <h2 class="about__subtitle">Hey there! I'am Rahul</h2>
-                    <p class="about__text">
-                    <ul style="list-style-type: square; margin-left: 6%;">
-                        <li style="margin-bottom: 2%;">Senior Software Developer @ Exar, India</li>
-                        <li style="margin-bottom: 2%;">Worked @ Amazon.in as Sr. Operation Analyst</li>
-                        <li style="margin-bottom: 2%;">Msc Computer Science, Liverpool John Moores University, Remote
+                <div class="about__edu reveal">
+                    <h3 class="card-title"><i class='bx bxs-graduation' aria-hidden="true"></i> Education</h3>
+                    <ul class="edu-list">
+                        <li>
+                            <strong>MSc Computer Science</strong>
+                            <span>Liverpool John Moores University (Remote)</span>
                         </li>
-                        <li style="margin-bottom: 2%;">PG Diploma in Full Stack Development, IIITB, Bengaluru</li>
-                        <li style="margin-bottom: 2%;">B.E. 2017 Grad @ Pune University, Mahrashtra, India</li>
+                        <li>
+                            <strong>PG Diploma in Full Stack Development</strong>
+                            <span>IIIT Bangalore, 2022</span>
+                        </li>
+                        <li>
+                            <strong>B.E. Computer Engineering</strong>
+                            <span>Savitribai Phule Pune University, 2017</span>
+                        </li>
                     </ul>
-                    </p>
                 </div>
             </div>
         </section>
-        
-        <br /><br /><br /><br /><br /><br />
 
-        <section class="about section " id="work">
-            <h2 class="section-title">Work</h2>
+        <!--===== EXPERIENCE =====-->
+        <section class="section container" id="experience">
+            <header class="section__header reveal">
+                <p class="section__kicker">Experience</p>
+                <h2 class="section__title">Where I've worked</h2>
+            </header>
 
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <a href="https://www.linkedin.com/company/autodesk/about/" target="blank"><img
-                            src="assets/img/autodesk.png" alt=""></a>
-                </div>
+            <ol class="timeline">
+                <li class="job reveal">
+                    <div class="job__head">
+                        <a class="job__logo" href="https://www.linkedin.com/company/autodesk/about/" target="_blank"
+                            rel="noopener noreferrer"><img src="assets/img/autodesk.png" alt="Autodesk" loading="lazy"></a>
+                        <div class="job__titles">
+                            <h3 class="job__role">Senior Software Engineer, Fullstack</h3>
+                            <p class="job__meta">Autodesk <span aria-hidden="true">·</span> Bengaluru (Hybrid)</p>
+                        </div>
+                        <span class="job__date">Apr 2023 – Present</span>
+                    </div>
+                    <p class="job__summary">Driving technical leadership, architecture and design of enterprise applications.</p>
+                    <ul class="job__points">
+                        <li>Providing technical leadership to the team, setting engineering direction, reviewing designs and mentoring engineers.</li>
+                        <li>Architecting and designing end-to-end solutions, from inception to delivery, for internal enterprise applications.</li>
+                        <li>Designing and implementing scalable cloud infrastructure and applications on AWS using Python, Node.js and React.</li>
+                        <li>Building Generative AI and Agentic AI (SAM AI) solutions and integrating them into enterprise workflows.</li>
+                    </ul>
+                    <ul class="tags" aria-label="Tech stack">
+                        <li>Generative AI</li><li>Agentic AI (SAM AI)</li><li>AWS Infrastructure</li><li>Node.js</li>
+                        <li>Python</li><li>React.js</li><li>TypeScript</li><li>SQL</li><li>REST</li><li>Git</li><li>Agile</li>
+                    </ul>
+                </li>
 
-                <div>
-                    <h2 class="about__subtitle">Lead SDE</h2>
-                    <p class="about__text"><span style="font-size: 14px;">Apr'23 -
-                            Present</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span
-                            style="font-size: 14px;">Bengaluru(Hybrid), IN</span><br /><br />
-                    <div></div>
-                    Working as a <b>Sr. Full Stack Lead</b>
-                    <li style="margin-left: 5%; font-size: 13px; margin-bottom: 2%; margin-top: 2%;">Design, build, Test
-                        high-quality systems using React, Python and AWS stack. </li>
-                    <li style="margin-left: 5%; font-size: 13px; margin-bottom: 2%; margin-top: 2%;">Creating enterprise
-                        Backend Infrastructure using Python and NodeJS. </li>
-                    <li style="margin-left: 5%; font-size: 13px; margin-bottom: 2%; margin-top: 2%;">Working on internal enterprise applications and managing project from inception to delivery phase. </li>
-                    <li style="margin-left: 5%; font-size: 13px; margin-bottom: 2%; margin-top: 2%;"> <b>Tech Stack :
-                        </b> Node.js; Python; React.js; AWS; HTML; SQL; GIT; TypeScript; REST; Backend; Agile; CSS;
-                        </li>
-                    </b><br />
+                <li class="job reveal">
+                    <div class="job__head">
+                        <a class="job__logo" href="https://www.linkedin.com/company/exarfit/about/" target="_blank"
+                            rel="noopener noreferrer"><img src="assets/img/exar.png" alt="ExarFit" loading="lazy"></a>
+                        <div class="job__titles">
+                            <h3 class="job__role">Sr. Software Developer</h3>
+                            <p class="job__meta">ExarFit <span aria-hidden="true">·</span> Bengaluru (Remote)</p>
+                        </div>
+                        <span class="job__date">Jan 2023 – Apr 2023</span>
+                    </div>
+                    <p class="job__summary">Part of the core tech team managing the product development.</p>
+                    <ul class="job__points">
+                        <li>Designed and built high-quality systems using React, Node.js, MongoDB and the AWS stack.</li>
+                        <li>Created scalable backend infrastructure using Node.js and Fastify.</li>
+                        <li>Worked with Three.js to manage 3D models and integrate them with the front-end app.</li>
+                    </ul>
+                    <ul class="tags" aria-label="Tech stack">
+                        <li>Node.js</li><li>React.js</li><li>AWS</li><li>MongoDB</li><li>Fastify</li><li>Three.js</li>
+                        <li>Nginx</li><li>AWS CodeDeploy</li><li>REST</li><li>Agile</li>
+                    </ul>
+                </li>
 
-                    </p>
-                </div>
-            </div
-            <br /><br /><br /><br />
+                <li class="job reveal">
+                    <div class="job__head">
+                        <a class="job__logo" href="https://www.linkedin.com/company/datman-ltd/" target="_blank"
+                            rel="noopener noreferrer"><img src="assets/img/work2.jpeg" alt="Datman" loading="lazy"></a>
+                        <div class="job__titles">
+                            <h3 class="job__role">Software Engineer II</h3>
+                            <p class="job__meta">Datman Ltd <span aria-hidden="true">·</span> Bengaluru</p>
+                        </div>
+                        <span class="job__date">Apr 2022 – Jan 2023</span>
+                    </div>
+                    <p class="job__summary">Worked on the payment gateway backend development team.</p>
+                    <ul class="job__points">
+                        <li>Managed end-to-end deployment across environments, using Git for version control and following agile delivery practices.</li>
+                        <li>Built highly scalable backend applications using the Node.js Express framework.</li>
+                        <li>Developed web apps using React, HTML and CSS, deployed with AWS Amplify.</li>
+                    </ul>
+                    <ul class="tags" aria-label="Tech stack">
+                        <li>Node.js</li><li>Express</li><li>React.js</li><li>AWS Amplify</li><li>Docker</li>
+                        <li>Kubernetes</li><li>SQL</li><li>REST</li><li>AWS CodeDeploy</li>
+                    </ul>
+                </li>
 
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <a href="https://www.linkedin.com/company/exarfit/about/" target="blank"><img
-                            src="assets/img/exar.png" alt=""></a>
-                </div>
+                <li class="job reveal">
+                    <div class="job__head">
+                        <a class="job__logo" href="https://www.linkedin.com/company/maveric-systems-limited/" target="_blank"
+                            rel="noopener noreferrer"><img src="assets/img/work3.jpeg" alt="Maveric Systems" loading="lazy"></a>
+                        <div class="job__titles">
+                            <h3 class="job__role">Software Engineer I</h3>
+                            <p class="job__meta">Maveric Systems <span aria-hidden="true">·</span> Bengaluru (Remote)</p>
+                        </div>
+                        <span class="job__date">Aug 2021 – Apr 2022</span>
+                    </div>
+                    <p class="job__summary">Part of the continuous learning and skill development team.</p>
+                    <ul class="job__points">
+                        <li>Built distributed, reliable and scalable data pipelines to ingest and process data in real time.</li>
+                        <li>Created machine learning models for banking applications, testing scripts and analysing results.</li>
+                        <li>Processed data with label encoding, scaling and imputing to ensure model efficiency and adaptation.</li>
+                    </ul>
+                    <ul class="tags" aria-label="Tech stack">
+                        <li>Hadoop</li><li>Python</li><li>Machine Learning</li><li>Node.js</li><li>React.js</li>
+                        <li>AWS</li><li>SQL</li>
+                    </ul>
+                </li>
 
-                <div>
-                    <h2 class="about__subtitle">Sr. Software Developer</h2>
-                    <p class="about__text"><span style="font-size: 14px;">Jan'23 -
-                            Apr'23</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span
-                            style="font-size: 14px;">Bengaluru(remote), IN</span><br /><br />
-                    <div></div>
-                    Part of the <b>core tech team managing the product development.</b>
-                    <li style="margin-left: 5%; font-size: 13px; margin-bottom: 2%; margin-top: 2%;">Design and build
-                        high-quality systems using React, NodeJS, MongoDB and AWS stack. </li>
-                    <li style="margin-left: 5%; font-size: 13px; margin-bottom: 2%; margin-top: 2%;">Creating Scalable
-                        Backend Infrastructure using NodeJS and Fastify. </li>
-                    <li style="margin-left: 5%; font-size: 13px; margin-bottom: 2%; margin-top: 2%;">Working on threeJS
-                        to manage 3d models and integrating it with Front End App. </li>
-                    <li style="margin-left: 5%; font-size: 13px; margin-bottom: 2%; margin-top: 2%;"> <b>Tech Stack :
-                        </b> Node.js; React.js; AWS; HTML; SQL; GIT; JavaScript; REST; Backend; Agile; CSS;
-                        Apache/Nginx; Three.js; AWS Code Deploy;</li>
-                    </b><br />
-
-                    </p>
-                </div>
-            </div>
-
-            <br /><br /><br /><br />
-
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <a href="https://www.linkedin.com/company/datman-ltd/" target="blank"><img
-                            src="assets/img/work2.jpeg" alt=""></a>
-                </div>
-
-                <div>
-                    <h2 class="about__subtitle">Software Engineer II</h2>
-                    <p class="about__text"><span style="font-size: 14px;">Apr'22 -
-                            Jan'23</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span style="font-size: 14px;">Bengaluru,
-                            India</span><br /><br />
-                    <div></div>
-                    Working on the <b>payment gateway backend development team</b>
-                    <li style="margin-left: 5%; font-size: 13px; margin-bottom: 2%; margin-top: 2%;">Managing end to end
-                        deployment on different environments and using GIT as version control system Working in agile
-                        methodology and adhering to project guidelines and delivery. </li>
-                    <li style="margin-left: 5%; font-size: 13px; margin-bottom: 2%; margin-top: 2%;">Building highly
-                        scalable backend applications using nodeJS express framework. </li>
-                    <li style="margin-left: 5%; font-size: 13px; margin-bottom: 2%; margin-top: 2%;">Developing web apps
-                        using ReactJS, HTM, CSS and using Amplify to deploy. </li>
-                    <li style="margin-left: 5%; font-size: 13px; margin-bottom: 2%; margin-top: 2%;"> <b>Tech Stack :
-                        </b> Node.js; React.js; AWS; HTML; SQL; GIT; JavaScript; REST; Backend; Agile; CSS; Frontend;
-                        Docker; Kubernetes; Infrastructure; AWS Code Deploy;</li>
-                    </b><br />
-                    </p>
-                </div>
-            </div>
-            <br /><br /><br /><br />
-
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <a href="https://www.linkedin.com/company/maveric-systems-limited/?originalSubdomain=in"
-                        target="blank"><img src="assets/img/work3.jpeg" alt=""></a>
-                </div>
-
-                <div>
-                    <h2 class="about__subtitle">Software Engineer I</h2>
-                    <p class="about__text"><span style="font-size: 14px;">Aug'21 -
-                            Apr'22</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span
-                            style="font-size: 14px;">Bengaluru(remote), IN</span><br /><br />
-                    <div></div>
-                    Part of the <b>continuous learning and skill development team.</b>
-                    <li style="margin-left: 5%; font-size: 13px; margin-bottom: 2%; margin-top: 2%;">Built distributed,
-                        reliable, and scalable data pipelines to ingest and process data in real-time. </li>
-                    <li style="margin-left: 5%; font-size: 13px; margin-bottom: 2%; margin-top: 2%;">Creating Machine
-                        learning models for banking applications Testing scripts and analysing results. </li>
-                    <li style="margin-left: 5%; font-size: 13px; margin-bottom: 2%; margin-top: 2%;">Data processing
-                        which includes label encoding, scaling, imputing to ensure model efficiency and adaption. </li>
-                    <li style="margin-left: 5%; font-size: 13px; margin-bottom: 2%; margin-top: 2%;"> <b>Tech Stack :
-                        </b> Node.js; React.js; AWS; HTML; SQL; GIT; JavaScript; REST; Backend; Agile; CSS; Hadoop;
-                    </li>
-                    </b><br />
-
-                    </p>
-                </div>
-            </div>
-
-            <br /><br /><br /><br />
-
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <a href="https://www.linkedin.com/company/amazon/" target="blank"><img src="assets/img/work4.jpeg"
-                            alt=""></a>
-                </div>
-
-                <div>Sr Operation Analyst</h2>
-                    <p class="about__text"><span style="font-size: 14px;">Mar'18 -
-                            Aug'21</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span style="font-size: 14px;">Bengaluru,
-                            IN</span><br /><br />
-                    <div></div>
-                    Part of the <b>Amazon Home Services(IN) team and leading the Inventory/Catalog Process. </b>
-                    <li style="margin-left: 5%; font-size: 13px; margin-bottom: 2%; margin-top: 2%;">Execute and
-                        schedule html rich campaigns on homepage, category pages and various cross-category pages across
-                        the A.in site.
-                    </li>
-                    <li style="margin-left: 5%; font-size: 13px; margin-bottom: 2%; margin-top: 2%;">Identify
-                        opportunities for automation (VBA, Java, Python, node JS), and scale winning experiences. </li>
-                    <li style="margin-left: 5%; font-size: 13px; margin-bottom: 2%; margin-top: 2%;">Using various AWS
-                        Tools to optimise and assess the quality of the internal automated tools which requires to run
-                        on scale. </li>
-                    <li style="margin-left: 5%; font-size: 13px; margin-bottom: 2%; margin-top: 2%;"> Always following
-                        Amazon leadership principles to provide seamless better customer experience. </li>
-                    <li style="margin-left: 5%; font-size: 13px; margin-bottom: 2%; margin-top: 2%;"> Assisted to
-                        high-reliability technology releases as a result of thorough testing that helped maintain Amazon
-                        Home Services leading sales ranking and customer-satisfaction rating i.e. 4.6/5 (Oct 2018).
-                    </li>
-                    <li style="margin-left: 5%; font-size: 13px; margin-bottom: 2%; margin-top: 2%;"> <b>Tech Stack :
-                        </b> Node.js; React.js; AWS; HTML; SQL; GIT; JavaScript; REST; Operations; Backend; CSS;
-                        Automation; Leadership; Python; Java; AWS Code Deploy;</li>
-                    </b><br />
-
-                    </p>
-                </div>
-            </div>
+                <li class="job reveal">
+                    <div class="job__head">
+                        <a class="job__logo" href="https://www.linkedin.com/company/amazon/" target="_blank"
+                            rel="noopener noreferrer"><img src="assets/img/work4.jpeg" alt="Amazon" loading="lazy"></a>
+                        <div class="job__titles">
+                            <h3 class="job__role">Sr. Operations Analyst</h3>
+                            <p class="job__meta">Amazon India <span aria-hidden="true">·</span> Bengaluru</p>
+                        </div>
+                        <span class="job__date">Mar 2018 – Aug 2021</span>
+                    </div>
+                    <p class="job__summary">Part of the Amazon Home Services (IN) team, leading the inventory and catalog process.</p>
+                    <ul class="job__points">
+                        <li>Executed and scheduled HTML-rich campaigns on the homepage, category pages and cross-category pages across Amazon.in.</li>
+                        <li>Identified opportunities for automation (VBA, Java, Python, Node.js) and scaled winning experiences.</li>
+                        <li>Used AWS tools to optimise and assess the quality of internal automated tools running at scale.</li>
+                        <li>Supported high-reliability technology releases through thorough testing, helping Amazon Home Services maintain a 4.6/5 customer-satisfaction rating (Oct 2018).</li>
+                    </ul>
+                    <ul class="tags" aria-label="Tech stack">
+                        <li>Automation</li><li>Python</li><li>Java</li><li>Node.js</li><li>AWS</li><li>SQL</li>
+                        <li>HTML/CSS</li><li>Operations</li><li>Leadership</li>
+                    </ul>
+                </li>
+            </ol>
         </section>
 
         <!--===== SKILLS =====-->
-        <section class="skills section" id="skills">
-            <h2 class="section-title">Skills</h2>
-            <br /><br />
+        <section class="section container" id="skills">
+            <header class="section__header reveal">
+                <p class="section__kicker">Skills</p>
+                <h2 class="section__title">What I work with</h2>
+            </header>
 
-            <div class="skillss">
-                <div class="skills__skill">Node.JS</div>
-                <div class="skills__skill">Express.JS</div>
-                <div class="skills__skill">React.JS</div>
-                <div class="skills__skill">Typescript</div>
-                <div class="skills__skill">Python</div>
-                <div class="skills__skill">Redux</div>
-                <div class="skills__skill">three.js</div>
-                <div class="skills__skill">MongoDB</div>
-                <div class="skills__skill">Fastify</div>
-            </div>
-
-            <br />
-            <div class="skillss">
-                <div class="skills__skill">AWS Lambda</div>
-                <div class="skills__skill">AWS SQS</div>
-                <div class="skills__skill">AWS SNS</div>
-                <div class="skills__skill">JavaScript</div>
-                <div class="skills__skill">Java</div>
-                <div class="skills__skill">MySQL</div>
-            </div>
-            <br />
-            <div class="skillss">
-                <div class="skills__skill">Nginx</div>
-                <div class="skills__skill">serverless</div>
-                <div class="skills__skill">sequelize</div>
-                <div class="skills__skill">GIT</div>
-                <div class="skills__skill">AWS Code commit</div>
-                <div class="skills__skill">AWS Code Deploy</div>
-                <div class="skills__skill">AWS Amplify</div>
-                <div class="skills__skill">Postman</div>
-                <div class="skills__skill">VS Code</div>
-                <div class="skills__skill">Jira, Clickup</div>
+            <div class="skills">
+                <article class="skill-card reveal">
+                    <h3 class="card-title"><i class='bx bx-brain' aria-hidden="true"></i> AI</h3>
+                    <ul class="tags">
+                        <li>Generative AI</li><li>Agentic AI (SAM AI)</li><li>RAG</li><li>LLM integration</li>
+                        <li>Vector search</li><li>Machine Learning</li>
+                    </ul>
+                </article>
+                <article class="skill-card reveal">
+                    <h3 class="card-title"><i class='bx bx-cloud' aria-hidden="true"></i> Cloud &amp; DevOps</h3>
+                    <ul class="tags">
+                        <li>AWS Infrastructure</li><li>AWS Lambda</li><li>AWS SQS</li><li>AWS SNS</li><li>AWS Amplify</li>
+                        <li>AWS CodeCommit</li><li>AWS CodeDeploy</li><li>Serverless</li><li>Docker</li><li>Kubernetes</li><li>Nginx</li>
+                    </ul>
+                </article>
+                <article class="skill-card reveal">
+                    <h3 class="card-title"><i class='bx bx-server' aria-hidden="true"></i> Backend</h3>
+                    <ul class="tags">
+                        <li>Node.js</li><li>Express.js</li><li>Fastify</li><li>Python</li><li>Java</li><li>REST APIs</li>
+                        <li>Sequelize</li>
+                    </ul>
+                </article>
+                <article class="skill-card reveal">
+                    <h3 class="card-title"><i class='bx bx-desktop' aria-hidden="true"></i> Frontend</h3>
+                    <ul class="tags">
+                        <li>React.js</li><li>Redux</li><li>TypeScript</li><li>JavaScript</li><li>Next.js</li><li>Three.js</li>
+                        <li>HTML &amp; CSS</li>
+                    </ul>
+                </article>
+                <article class="skill-card reveal">
+                    <h3 class="card-title"><i class='bx bx-data' aria-hidden="true"></i> Data</h3>
+                    <ul class="tags">
+                        <li>SQL</li><li>MySQL</li><li>PostgreSQL</li><li>MongoDB</li><li>Hadoop</li>
+                    </ul>
+                </article>
+                <article class="skill-card reveal">
+                    <h3 class="card-title"><i class='bx bx-group' aria-hidden="true"></i> Leadership &amp; Practice</h3>
+                    <ul class="tags">
+                        <li>Tech Leadership</li><li>System Architecture</li><li>Mentoring</li><li>Agile</li><li>Git</li>
+                        <li>Postman</li><li>Jira</li><li>ClickUp</li>
+                    </ul>
+                </article>
             </div>
         </section>
 
-        <br /><br /><br />
+        <!--===== PROJECTS =====-->
+        <section class="section container" id="projects">
+            <header class="section__header reveal">
+                <p class="section__kicker">Projects</p>
+                <h2 class="section__title">Things I've built</h2>
+            </header>
 
-        <!--===== WORK =====-->
-        <section class="work section" id="project">
-            <h2 class="section-title">Projects</h2>
+            <div class="projects">
+                <article class="project-card reveal">
+                    <div class="project-card__top">
+                        <i class='bx bx-bot project-card__icon' aria-hidden="true"></i>
+                        <a href="https://github.com/Rahuld27/ai-chatbot-platform" target="_blank" rel="noopener noreferrer"
+                            class="icon-btn" aria-label="AI Chatbot Platform on GitHub"><i class='bx bxl-github'
+                                aria-hidden="true"></i></a>
+                    </div>
+                    <h3 class="project-card__title">AI Chatbot Platform</h3>
+                    <p class="project-card__desc">
+                        Plug &amp; play, multi-tenant, white-label RAG chatbot platform built entirely on free-tier
+                        infrastructure. Businesses onboard with their own branding, persona and knowledge base, and
+                        embed the chat widget on any site with a single script tag.
+                    </p>
+                    <ul class="project-card__points">
+                        <li>Website crawler, chunking and local embeddings with tenant-scoped pgvector similarity search.</li>
+                        <li>Streaming LLM responses over SSE with multi-turn conversation memory.</li>
+                        <li>Hardened with input validation, rate limiting, prompt-injection guards, token budgets and SSRF protection.</li>
+                    </ul>
+                    <ul class="tags" aria-label="Tech stack">
+                        <li>Next.js</li><li>TypeScript</li><li>Supabase</li><li>pgvector</li><li>Groq · Llama 3.3 70B</li>
+                        <li>Transformers.js</li><li>Zod</li><li>Vercel</li>
+                    </ul>
+                    <a href="https://github.com/Rahuld27/ai-chatbot-platform" target="_blank" rel="noopener noreferrer"
+                        class="project-card__link">View on GitHub <i class='bx bx-right-arrow-alt' aria-hidden="true"></i></a>
+                </article>
+            </div>
+        </section>
 
-            <div class="work__container bd-grid">
-                <div>
-                    Yet to be updated!
+        <!--===== CONTACT =====-->
+        <section class="section container" id="contact">
+            <div class="contact reveal">
+                <p class="section__kicker">Contact</p>
+                <h2 class="section__title">Let's connect</h2>
+                <p class="contact__text">Have a question or want to collaborate? Reach out on any of these.</p>
+                <div class="contact__actions">
+                    <a href="mailto:dixit.rahul94@gmail.com" class="btn btn--primary"><i class='bx bx-envelope'
+                            aria-hidden="true"></i> dixit.rahul94@gmail.com</a>
+                    <a href="https://www.linkedin.com/in/rahuldixitblr/" target="_blank" rel="noopener noreferrer"
+                        class="btn btn--ghost"><i class='bx bxl-linkedin' aria-hidden="true"></i> LinkedIn</a>
+                    <a href="https://github.com/Rahuld27" target="_blank" rel="noopener noreferrer"
+                        class="btn btn--ghost"><i class='bx bxl-github' aria-hidden="true"></i> GitHub</a>
                 </div>
             </div>
         </section>
+    </main>
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>&copy; <span id="year">2026</span> Rahul Dixit</p>
+            <a href="#home" class="footer__top">Back to top <i class='bx bx-up-arrow-alt' aria-hidden="true"></i></a>
+        </div>
+    </footer>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-
-        <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
